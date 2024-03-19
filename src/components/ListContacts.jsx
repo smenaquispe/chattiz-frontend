@@ -10,10 +10,10 @@ export function ListContacts() {
     const fillContacts = (contacts) => {
         const newContactsList = contacts.results.map(contact => {
             const key = contact.login.uuid
-            const name = [contact.name.title ?? "", contact.name.first, contact.name.last].join(' ')
+            const name = [contact.name.first, contact.name.last].join(' ')
             const img = contact.picture.thumbnail
             const message = "Hello, I'm using WhatsApp"
-            
+
             let lastDate = new Date()
             let hours = lastDate.getHours();
             let minutes = lastDate.getMinutes();
