@@ -37,6 +37,7 @@ export function ListContacts({ nameSearch }) {
             const contacts = await response.json();
             const newContactsList = fillContacts(contacts);
             setContactsList(newContactsList);
+            setFilteredContacts(newContactsList);
         } catch (error) {
             console.error(error);
         }
