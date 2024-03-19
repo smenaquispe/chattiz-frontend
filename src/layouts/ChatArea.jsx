@@ -33,13 +33,38 @@ export function ChatArea() {
       mine: false,
       content: "What are you doing?",
       time: "12:03"
+    },
+    {
+      mine: true,
+      content: "I'm working.",
+      time: "12:04"
+    },
+    {
+      mine: false,
+      content: "I'm studying.",
+      time: "12:05"
+    },
+    {
+      mine: true,
+      content: "I'm working.",
+      time: "12:06"
+    },
+    {
+      mine: false,
+      content: "I'm studying.",
+      time: "12:07"
+    },
+    {
+      mine: true,
+      content: "I'm working.",
+      time: "12:08"
     }
   ]
   
   
   return (
     <div
-        className="bg-gray-100 flex-grow-1 w-3/4"
+        className="bg-gray-100 w-3/4 overflow-y-auto h-screen flex flex-col"
     
     >
 

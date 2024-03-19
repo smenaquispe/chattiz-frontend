@@ -32,7 +32,7 @@ const parseMessages = (messages) => {
 
 
 export function Messages({messages}) {
-    return <div className="mt-10 px-2">
+    return <div className="mt-10 mb-20 px-2 overflow-y-auto">
         {
             parseMessages(messages).map((message, index) => message)
         }

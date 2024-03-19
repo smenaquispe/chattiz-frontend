@@ -45,7 +45,7 @@ export function ListContacts() {
     }, []); // Empty dependency array ensures this effect runs only once after the initial render
     
     return (
-        <div>
+        <div className='overflow-y-auto'>
             {
                 contactsList.map(contact => (
                     <Contact key={contact.key} name={contact.name} img={contact.img} message={contact.message} lastDate={contact.lastDate} />
