@@ -10,7 +10,7 @@ export function Contact({name, img, message, lastDate}) {
                 <img src={img} alt="profile" className="w-12 h-12 rounded-full" />
                 <div className="ml-3">
                     <h2 className="text-lg font-semibold whitespace-nowrap overflow-hidden overflow-ellipsis truncate max-w-[150px]">{name}</h2>
-                    <p className="text-sm text-gray-500">{message}</p>
+                    <p className="text-sm text-gray-500 whitespace-nowrap overflow-hidden overflow-ellipsis truncate max-w-[150px]">{message}</p>
                 </div>
             </div>
             <div className="flex flex-col items-end ml-auto">

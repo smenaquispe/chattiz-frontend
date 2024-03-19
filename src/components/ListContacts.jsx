@@ -46,13 +46,11 @@ export function ListContacts() {
     
     return (
         <div>
-            <div>
-                {
-                    contactsList.map(contact => (
-                        <Contact key={contact.key} name={contact.name} img={contact.img} message={contact.message} lastDate={contact.lastDate} />
-                    ))
-                }
-            </div>
+            {
+                contactsList.map(contact => (
+                    <Contact key={contact.key} name={contact.name} img={contact.img} message={contact.message} lastDate={contact.lastDate} />
+                ))
+            }
         </div>
     )
 }
