@@ -3,7 +3,7 @@ export function Contact({name, img, message, lastDate}) {
   return (
 
     <div>
-        <div className="flex items-center p-4 space-x-4 border-rounded-lg hover:bg-gray-100 cursor-pointer w-full">
+        <div className="flex items-center p-4 space-x-4 border-rounded-lg hover:bg-purple-300 cursor-pointer w-full">
             <img src={img} alt="profile" className="w-12 h-12 rounded-full" />
             <div>
                 <h2 className="text-lg font-semibold">{name}</h2>
