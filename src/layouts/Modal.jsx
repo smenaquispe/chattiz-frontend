@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { ButtonWithSvg } from "../components/ButtonWithSvg";
 import { SETTINGS, PROFILE, LOGOUT } from "../constants/consts";
+import { Settings } from "./Settings";
+import { Profile } from "./Profile";
+import { Logout } from "./Logout";
 
 export function Modal() {
 
@@ -17,26 +20,13 @@ export function Modal() {
                     </ul>
                 </div>
                 {
-                    view === SETTINGS && <div className="w-4/5 ml-4">
-                        <h2>Settings</h2>
-                        <p>Dark mode: <span>On</span></p>
-                        <p>Notifications: <span>On</span></p>
-                    </div>
+                    view === SETTINGS && <Settings />
                 }
                 {
-                    view === PROFILE && <div className="w-4/5 ml-4">
-                        <h2>Profile</h2>
-                        <p>Username: <span>John Doe</span></p>
-                        <p>Email: <span> johndoegmail.com</span></p>
-                    </div>
+                    view === PROFILE && <Profile />
                 }
                 {
-                    view === LOGOUT && <div className="w-4/5 ml-4">
-                        <h2>Logout</h2>
-                        <p>Are you sure you want to logout?</p>
-                        <button className="bg-red-500 text-white px-4 py-2 rounded-md">Yes</button>
-                        <button className="bg-gray-200 text-gray-700 px-4 py-2 rounded-md ml-4">No</button>
-                    </div>
+                    view === LOGOUT && <Logout />
                 }
             </div>
         </div>
