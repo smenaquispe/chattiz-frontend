@@ -2,7 +2,7 @@ import { PhotoContainer } from "../components/PhotoContainer"
 
 export function Profile() {
     return (
-        <div className="w-4/5 ml-4">
+        <div className="w-full px-4">
             <h2 className="text-2xl font-bold mb-4 text-purple-600" >Profile</h2>
             
             <div className="flex justify-center">
