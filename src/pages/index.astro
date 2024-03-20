@@ -2,6 +2,7 @@
 import { SideBar } from '../layouts/SideBar';
 import { MainArea } from '../layouts/MainArea';
 import { ChatArea } from '../layouts/ChatArea';
+import { Modal } from '../layouts/Modal';
 ---
 
 <body>
@@ -9,6 +10,7 @@ import { ChatArea } from '../layouts/ChatArea';
 		<SideBar client:load />
 		<ChatArea client:load />
 	</MainArea>
+	<Modal client:load />
 </body>
 
 <style>
