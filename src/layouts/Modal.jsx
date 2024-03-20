@@ -28,9 +28,9 @@ export function Modal() {
             <div className="bg-white p-8 rounded-lg shadow-lg flex w-[800px] h-[350px]" onClick={handleModalClick}>
                 <div className="w-1/5 pr-4 border-r-2 border-gray-200">
                     <ul className="h-full flex flex-col items-center justify-center">
-                        <ButtonWithSvg svgName={SETTINGS} setView={setView} />
-                        <ButtonWithSvg svgName={PROFILE} setView={setView}  />
-                        <ButtonWithSvg svgName={LOGOUT}  setView={setView}  />
+                        <ButtonWithSvg svgName={SETTINGS} setView={setView} view={view} />
+                        <ButtonWithSvg svgName={PROFILE} setView={setView} view={view}  />
+                        <ButtonWithSvg svgName={LOGOUT}  setView={setView} view={view} />
                     </ul>
                 </div>
                 <div className="w-4/5">
