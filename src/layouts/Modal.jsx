@@ -4,20 +4,24 @@ import { SETTINGS, PROFILE, LOGOUT } from "../constants/consts";
 import { Settings } from "./Settings";
 import { Profile } from "./Profile";
 import { Logout } from "./Logout";
+import { useStore } from "@nanostores/react";
+import { isOpenModal } from "../provider/store";
 
 export function Modal() {
 
     const [view, setView] = useState(SETTINGS);
+    const isOpen = useStore(isOpenModal)
+
 
     function closeModal() {
-        setView(null)
+        isOpenModal.set(false)
     }
 
     function handleModalClick(event) {
         event.stopPropagation(); // Prevent the click event from bubbling up to the outer div
     }
 
-    if (!view) return null;
+    if (!isOpen) return null;
 
     return (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" onClick={closeModal}>
