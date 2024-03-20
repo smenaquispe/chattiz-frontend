@@ -1,6 +1,6 @@
 export function ChatBar() {
     return (
-        <div className="fixed bottom-0 p-4 mb-5 max-width flex space-x-4" style={{width: "inherit"}}>
+        <div className="fixed bottom-0 p-4 max-width flex space-x-4" style={{width: "inherit"}}>
             <input
                 className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500 transition duration-200 ease-in-out"
                 type="text" placeholder="Type a message..."
